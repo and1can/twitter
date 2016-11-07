@@ -10,7 +10,7 @@ gem 'bootstrap-sass'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 # change sqlite3 as the database for Active Record to pg because want to be able to to concurrent writes
 #gem 'sqlite3'
-gem 'pg', '~> 0.12.2'
+gem 'pg'
 #Heroku pre-req
 gem 'rails_12factor', group: :production # don't use locally, only on heroku
 
