@@ -9,10 +9,18 @@ gem 'bootstrap-sass'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 # change sqlite3 as the database for Active Record to pg because want to be able to to concurrent writes
-gem 'pg'
+#gem 'sqlite3'
+gem 'pg', '~> 0.12.2'
 #Heroku pre-req
 gem 'rails_12factor', group: :production # don't use locally, only on heroku
+
+#adding pg and rails12 factor
+#group :production do
+#  gem 'pg', '0.15.1'
+#  gem 'rails_12factor'
+#end
 # Use Puma as the app server
+#gem 'pg'
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
